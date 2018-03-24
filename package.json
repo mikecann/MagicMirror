@@ -4,10 +4,10 @@
   "description": "The open source modular smart mirror platform.",
   "main": "js/electron.js",
   "scripts": {
-    "start": "sh run-start.sh",
+    "start": "electron js/electron.js",
     "install": "cd vendor && npm install",
     "install-fonts": "cd fonts && npm install",
-    "postinstall": "sh installers/postinstall/postinstall.sh && npm run install-fonts",
+    "postinstall": "npm run install-fonts",
     "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha tests --recursive",
     "test:unit": "NODE_ENV=test ./node_modules/mocha/bin/mocha tests/unit --recursive",
     "test:e2e": "NODE_ENV=test ./node_modules/mocha/bin/mocha tests/e2e --recursive",
