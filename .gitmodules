@@ -1,0 +1,9 @@
+[submodule "modules/DailyXKCD"]
+	path = modules/DailyXKCD
+	url = https://github.com/Blastitt/DailyXKCD.git
+[submodule "modules/internet-monitor"]
+	path = modules/internet-monitor
+	url = https://github.com/ronny3050/internet-monitor.git
+[submodule "modules/mmm-weatherchart"]
+	path = modules/mmm-weatherchart
+	url = https://github.com/paphko/mmm-weatherchart.git
