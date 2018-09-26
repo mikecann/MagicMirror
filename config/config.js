@@ -30,7 +30,7 @@ var config = {
 			module: "internet-monitor",
 			position: "top_center",
 			header: "Internet Monitor",
-			config:{
+			config: {
 				type: "",
 				maxTime: 10000,
 				updateInterval: 240000,
@@ -106,6 +106,26 @@ var config = {
 				location: "New York",
 				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "YOUR_OPENWEATHER_API_KEY"
+			}
+		},
+		{
+			module: 'MMM-fitbit',
+			position: 'top_center',
+			config: {
+				credentials: {
+					client_id: "22CTGR",
+					client_secret: "a3d5317d7709ca744eefdc867cea4253"
+				},
+				resources: [
+					'steps',
+					'floors',
+					'caloriesOut',
+					'distance',
+					'activeMinutes',
+					'sleep',
+					'heart'
+				],
+				update_interval: 60
 			}
 		},
 		{
