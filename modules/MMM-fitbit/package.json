@@ -1,0 +1,14 @@
+{
+  "name": "mmm-fitbit",
+  "version": "1.0.0",
+  "description": "MMM-fitbit === [MagicMirror](https://github.com/MichMich/MagicMirror) Module for getting fitbit data. First time users follow setup instructions, if your tokens get lost run `setupAccess.py` again without arguments and accept reading from `credentials.ini`.",
+  "main": "MMM-fitbit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "python-shell": "^1.0.4"
+  }
+}
