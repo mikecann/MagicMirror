@@ -65,6 +65,13 @@ var config = {
 				mmDirectory: "./" // required for caching; adjust if it differs
 			}
 		},
+		// {
+		// 	module: 'MMM-YrThen',
+		// 	position: 'top_right',
+		// 	config: {
+		// 		location: '1-2820936',
+		// 	}
+		// },
 		{
 			module: "alert",
 		},
@@ -86,62 +93,39 @@ var config = {
 			}
 		},
 		// {
-		// 	module: "compliments",
-		// 	position: "lower_third"
+		// 	module: 'MMM-fitbit',
+		// 	position: 'top_center',
+		// 	config: {
+		// 		credentials: {
+		// 			client_id: "22CTGR",
+		// 			client_secret: "a3d5317d7709ca744eefdc867cea4253"
+		// 		},
+		// 		resources: [
+		// 			'steps',
+		// 			'floors',
+		// 			'caloriesOut',
+		// 			'distance',
+		// 			'activeMinutes',
+		// 			'sleep',
+		// 			'heart'
+		// 		],
+		// 		update_interval: 60
+		// 	}
 		// },
-		{
-			module: "currentweather",
-			position: "top_right",
-			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: 'MMM-fitbit',
-			position: 'top_center',
-			config: {
-				credentials: {
-					client_id: "22CTGR",
-					client_secret: "a3d5317d7709ca744eefdc867cea4253"
-				},
-				resources: [
-					'steps',
-					'floors',
-					'caloriesOut',
-					'distance',
-					'activeMinutes',
-					'sleep',
-					'heart'
-				],
-				update_interval: 60
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true
-			}
-		},
+		// {
+		// 	module: "newsfeed",
+		// 	position: "bottom_bar",
+		// 	config: {
+		// 		feeds: [
+		// 			{
+		// 				title: "New York Times",
+		// 				url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+		// 			}
+		// 		],
+		// 		showSourceTitle: true,
+		// 		showPublishDate: true
+		// 	}
+		// },
 	]
 
 };

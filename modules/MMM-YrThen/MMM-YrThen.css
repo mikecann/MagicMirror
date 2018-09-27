@@ -1,0 +1,38 @@
+.yrthen-table {
+    display: inline-block;
+}
+
+.yrthen-icon {
+  width: 40px;
+}
+
+.yrthen-header {
+  text-align: center;
+}
+.yrthen-day {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.yrthen-forecast-cell {
+  padding-left: 10px;
+  text-align: center;
+}
+.yrthen-icon-cell {
+  padding-right: 10px;
+  text-align: center;
+}
+
+.yrthen-temp {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.yrthen-prec {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.yrthen-timecell {
+  text-align: center;
+}
