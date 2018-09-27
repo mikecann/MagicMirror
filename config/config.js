@@ -26,21 +26,21 @@ var config = {
 	units: "metric",
 
 	modules: [
-		{
-			module: "internet-monitor",
-			position: "top_center",
-			header: "Internet Monitor",
-			config: {
-				type: "",
-				maxTime: 10000,
-				updateInterval: 240000,
-				verbose: false,
-				displayStrength: true,
-				displaySpeed: true,
-				strengthIconSize: 80,
-				maxGaugeScale: 100,
-			},
-		},
+		// {
+		// 	module: "internet-monitor",
+		// 	position: "top_center",
+		// 	header: "Internet Monitor",
+		// 	config: {
+		// 		type: "",
+		// 		maxTime: 10000,
+		// 		updateInterval: 240000,
+		// 		verbose: false,
+		// 		displayStrength: true,
+		// 		displaySpeed: true,
+		// 		strengthIconSize: 80,
+		// 		maxGaugeScale: 100,
+		// 	},
+		// },
 		// {
 		// 	module: "MMM-SystemStats",
 		// 	position: "top_center", // This can be any of the regions.
