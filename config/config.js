@@ -76,22 +76,18 @@ var config = {
 			module: "alert",
 		},
 		{
-			module: "updatenotification",
-			position: "top_bar"
-		},
-		{
 			module: "clock",
 			position: "top_left"
 		},
 		{
-			module: "DailyXKCD",
-			position: "top_left",
+			module: 'MMM-DailyDilbert',
+			position: 'bottom_right',
 			config: {
-				invertColors: true,
-				title: true,
-				altText: true
+				updateInterval: 36000000
 			}
 		},
+
+
 		// {
 		// 	module: 'MMM-fitbit',
 		// 	position: 'top_center',
