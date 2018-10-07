@@ -95,14 +95,14 @@ var config = {
 				showAltText: false
 			}
 		},
-		{
-			module: 'MMM-jokes',
-			position: 'bottom',	// This can be any of the regions.
-			// Best results in one of the middle regions like: lower_third
-			config: {
-				api: 'icndb' //required
-			}
-		}
+		// {
+		// 	module: 'MMM-jokes',
+		// 	position: 'bottom',	// This can be any of the regions.
+		// 	// Best results in one of the middle regions like: lower_third
+		// 	config: {
+		// 		api: 'icndb' //required
+		// 	}
+		// }
 
 		// {
 		// 	module: 'MMM-fitbit',
@@ -124,20 +124,21 @@ var config = {
 		// 		update_interval: 60
 		// 	}
 		// },
-		// {
-		// 	module: "newsfeed",
-		// 	position: "bottom_bar",
-		// 	config: {
-		// 		feeds: [
-		// 			{
-		// 				title: "New York Times",
-		// 				url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-		// 			}
-		// 		],
-		// 		showSourceTitle: true,
-		// 		showPublishDate: true
-		// 	}
-		// },
+
+		{
+			module: "newsfeed",
+			position: "bottom_bar",
+			config: {
+				feeds: [
+					{
+						title: "New York Times",
+						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+					}
+				],
+				showSourceTitle: true,
+				showPublishDate: true
+			}
+		},
 	]
 
 };
