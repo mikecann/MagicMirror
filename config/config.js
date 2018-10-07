@@ -86,7 +86,23 @@ var config = {
 				updateInterval: 36000000
 			}
 		},
-
+		{
+			module: 'DailyXKCD',
+			position: 'bottom_right',
+			config: {
+				invertColors: true,
+				showTitle: true,
+				showAltText: false
+			}
+		},
+		{
+			module: 'MMM-jokes',
+			position: 'bottom',	// This can be any of the regions.
+			// Best results in one of the middle regions like: lower_third
+			config: {
+				api: 'icndb' //required
+			}
+		}
 
 		// {
 		// 	module: 'MMM-fitbit',
