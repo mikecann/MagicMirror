@@ -61,8 +61,8 @@ Module.register("MMM-windy", {
     setTimeout(() => {
       const options = {
         key: self.config.apiKey,
-        lat: -27.634874,
-        lon: 158.649388,
+        lat: -31.905541,
+        lon: 165.326155,
         zoom: 4
       };
       windyInit(options, windyAPI => {
