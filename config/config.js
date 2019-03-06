@@ -103,7 +103,7 @@ var config = {
         apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
         initLoadDelay: 50 // optional, default is 50 milliseconds
       }
-    },
+    }
 
     // {
     //   module: "MMM-AssistantMk2",
@@ -143,20 +143,20 @@ var config = {
     // 	}
     // },
 
-    {
-      module: "newsfeed",
-      position: "bottom_bar",
-      config: {
-        feeds: [
-          {
-            title: "New York Times",
-            url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-          }
-        ],
-        showSourceTitle: true,
-        showPublishDate: true
-      }
-    }
+    // {
+    //   module: "newsfeed",
+    //   position: "bottom_bar",
+    //   config: {
+    //     feeds: [
+    //       {
+    //         title: "New York Times",
+    //         url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    //       }
+    //     ],
+    //     showSourceTitle: true,
+    //     showPublishDate: true
+    //   }
+    // }
   ]
 };
 

@@ -18,3 +18,10 @@ body {
 .region.fullscreen.above {
   z-index: -1;
 }
+
+#windy #bottom,
+#windy #mobile-ovr-select,
+#windy #embed-zoom,
+#windy #logo-wrapper {
+  display: none !important;
+}
