@@ -63,7 +63,7 @@ Module.register("MMM-windy", {
         key: self.config.apiKey,
         lat: -26.696545,
         lon: 133.699364,
-        zoom: 6
+        zoom: 4
       };
       windyInit(options, windyAPI => {
         console.log(windyAPI);
