@@ -1,29 +1,30 @@
-Module.register('MMM-windy', {
+Module.register("MMM-windy", {
   defaults: {
     initLoadDelay: 50,
-    apiKey: '',
+    apiKey: ""
   },
   getScripts: function() {
-    return [
-      'https://unpkg.com/leaflet@0.7.7/dist/leaflet.js',
-    ];
+    return ["https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"];
   },
   getDom: function() {
     var self = this;
-    var wrapper = document.createElement('div');
-    if (self.config.apiKey === '') {
-      wrapper.innerHTML = 'Please set the windy.com <i>apiKey</i> in the config for module: ' + this.name + '.';
-      wrapper.className = 'dimmed light small';
+    var wrapper = document.createElement("div");
+    if (self.config.apiKey === "") {
+      wrapper.innerHTML =
+        "Please set the windy.com <i>apiKey</i> in the config for module: " +
+        this.name +
+        ".";
+      wrapper.className = "dimmed light small";
       return wrapper;
     }
 
     if (!self.loaded) {
-      wrapper.innerHTML = this.translate('LOADING');
-      wrapper.innerClassName = 'dimmed light small';
+      wrapper.innerHTML = this.translate("LOADING");
+      wrapper.innerClassName = "dimmed light small";
       return wrapper;
     }
-    var mapDiv = document.createElement('div');
-    mapDiv.id = 'windy';
+    var mapDiv = document.createElement("div");
+    mapDiv.id = "windy";
     wrapper.appendChild(mapDiv);
     console.log(wrapper);
 
@@ -31,18 +32,16 @@ Module.register('MMM-windy', {
   },
   start: function() {
     let self = this;
-    Log.info('Starting module: ' + this.name);
+    Log.info("Starting module: " + this.name);
     self.loaded = false;
-    var scripts = [
-      'https://api4.windy.com/assets/libBoot.js'
-    ];
+    var scripts = ["https://api4.windy.com/assets/libBoot.js"];
     var loadScripts = function(scripts) {
       var script = scripts.shift();
-      var el = document.createElement('script');
-      el.type = 'text/javascript';
+      var el = document.createElement("script");
+      el.type = "text/javascript";
       el.src = script;
-      el.setAttribute('defer', '');
-      el.setAttribute('async', '');
+      el.setAttribute("defer", "");
+      el.setAttribute("async", "");
 
       el.onload = function() {
         if (scripts.length) {
@@ -53,7 +52,7 @@ Module.register('MMM-windy', {
           self.scheduleInit(self.config.initLoadDelay);
         }
       };
-      document.querySelector('body').appendChild(el);
+      document.querySelector("body").appendChild(el);
     };
     loadScripts(scripts);
   },
@@ -62,6 +61,9 @@ Module.register('MMM-windy', {
     setTimeout(() => {
       const options = {
         key: self.config.apiKey,
+        lat: -31.950527,
+        lon: 115.860458,
+        zoom: 5
       };
       windyInit(options, windyAPI => {
         console.log(windyAPI);
@@ -69,8 +71,6 @@ Module.register('MMM-windy', {
     }, delay);
   },
   getStyles: function() {
-    return [
-      'MMM-windy.css'
-    ];
+    return ["MMM-windy.css"];
   }
-})
+});
