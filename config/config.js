@@ -95,13 +95,24 @@ var config = {
         showAltText: false
       }
     },
+
     {
-      module: "MMM-AssistantMk2",
-      position: "top_left",
+      module: "MMM-windy",
+      position: "fullscreen_above", // this must be set to 'fullscreen_above'
       config: {
-        useWelcomeMessage: "brief today"
+        apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
+        initLoadDelay: 50 // optional, default is 50 milliseconds
       }
     },
+
+    // {
+    //   module: "MMM-AssistantMk2",
+    //   position: "top_left",
+    //   config: {
+    //     useWelcomeMessage: "brief today"
+    //   }
+    // },
+
     // {
     // 	module: 'MMM-jokes',
     // 	position: 'bottom',	// This can be any of the regions.
