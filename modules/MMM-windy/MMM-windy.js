@@ -4,7 +4,7 @@ Module.register("MMM-windy", {
     apiKey: ""
   },
   getScripts: function() {
-    return ["https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"];
+    return ["https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"];
   },
   getDom: function() {
     var self = this;
