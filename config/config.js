@@ -97,13 +97,27 @@ var config = {
     },
 
     {
-      module: "MMM-windy",
-      position: "fullscreen_above", // this must be set to 'fullscreen_above'
+      module: 'MMM-SystemStats',
+      position: 'top_center', // This can be any of the regions.
+      // classes: 'small dimmed', // Add your own styling. OPTIONAL.
+      // header: 'System Stats', // Set the header text OPTIONAL
       config: {
-        apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
-        initLoadDelay: 50 // optional, default is 50 milliseconds
-      }
-    }
+        updateInterval: 10000, // every 10 seconds
+        align: 'right', // align labels
+        //header: 'System Stats', // This is optional
+        units: 'metric', // default, metric, imperial
+        view: 'textAndIcon',
+      },
+    },
+
+    // {
+    //   module: "MMM-windy",
+    //   position: "fullscreen_above", // this must be set to 'fullscreen_above'
+    //   config: {
+    //     apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
+    //     initLoadDelay: 50 // optional, default is 50 milliseconds
+    //   }
+    // }
 
     // {
     //   module: "MMM-AssistantMk2",
