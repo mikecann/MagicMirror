@@ -129,10 +129,7 @@ var config = {
     {
       module: "MMM-ip",
       position: "top_left",
-      config: {
-        showFamily: "IPv4",
-        showType: "wlan0"
-      }
+      config: {}
     }
 
     // {
