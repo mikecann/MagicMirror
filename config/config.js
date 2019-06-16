@@ -77,7 +77,10 @@ var config = {
     },
     {
       module: "clock",
-      position: "top_left"
+      position: "top_left",
+      config: {
+        displaySeconds: true
+      }
     },
     {
       module: "MMM-DailyDilbert",
@@ -110,28 +113,19 @@ var config = {
     //   },
     // },
 
-    {
-      module: "MMM-windy",
-      position: "fullscreen_above", // this must be set to 'fullscreen_above'
-      config: {
-        apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
-        initLoadDelay: 500 // optional, default is 50 milliseconds
-      }
-    },
+    // {
+    //   module: "MMM-windy",
+    //   position: "fullscreen_above", // this must be set to 'fullscreen_above'
+    //   config: {
+    //     apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
+    //     initLoadDelay: 500 // optional, default is 50 milliseconds
+    //   }
+    // },
 
     {
       module: "MMM-auto-refresh",
       config: {
         refreshInterval: 60000 * 5 // every 5 mins
-      }
-    },
-
-    {
-      module: "stocks",
-      position: "bottom_bar",
-      config: {
-        stocks: ".DJI,MSFT,AAPL,GOOG,INTC,CICS,TSLA,FB", // stock symbols
-        updateInterval: 37000 // update interval in milliseconds
       }
     }
 
