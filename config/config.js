@@ -127,9 +127,11 @@ var config = {
     },
 
     {
-      module: "MMM-ip",
+      module: "MMM-NetworkScanner",
       position: "top_left",
-      config: {}
+      config: {
+        // Optional config options
+      }
     }
 
     // {
