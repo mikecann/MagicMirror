@@ -127,10 +127,11 @@ var config = {
     },
 
     {
-      module: "MMM-NetworkScanner",
-      position: "top_left",
+      module: "stocks",
+      position: "bottom_bar",
       config: {
-        // Optional config options
+        stocks: ".DJI,MSFT,AAPL,GOOG,INTC,CICS,TSLA,FB", // stock symbols
+        updateInterval: 37000 // update interval in milliseconds
       }
     }
 
