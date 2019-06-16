@@ -124,6 +124,15 @@ var config = {
       config: {
         refreshInterval: 60000 * 5 // every 5 mins
       }
+    },
+
+    {
+      module: "MMM-ip",
+      position: "top_left",
+      config: {
+        showFamily: "IPv4",
+        showType: "wlan0"
+      }
     }
 
     // {
