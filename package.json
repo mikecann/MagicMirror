@@ -5,7 +5,7 @@
   "main": "js/electron.js",
   "scripts": {
     "start": "electron js/electron.js",
-    "start-prod": "git pull --force && yarn && yarn start",
+    "start-prod": "git fetch --all && git reset --hard origin/master && yarn && yarn start",
     "ssh:start": "DISPLAY=:0 yarn start",
     "postinstall": "cd vendor && yarn install && cd ../fonts && yarn install && cd ../modules && npm-recursive-install",
     "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha tests --recursive",
