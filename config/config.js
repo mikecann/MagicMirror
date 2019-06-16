@@ -122,7 +122,7 @@ var config = {
     {
       module: "MMM-auto-refresh",
       config: {
-        refreshInterval: 60000
+        refreshInterval: 60000 * 5 // every 5 mins
       }
     }
 
