@@ -113,14 +113,14 @@ var config = {
     //   },
     // },
 
-    {
-      module: "MMM-windy",
-      position: "fullscreen_above", // this must be set to 'fullscreen_above'
-      config: {
-        apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
-        initLoadDelay: 500 // optional, default is 50 milliseconds
-      }
-    },
+    // {
+    //   module: "MMM-windy",
+    //   position: "fullscreen_above", // this must be set to 'fullscreen_above'
+    //   config: {
+    //     apiKey: "vOU9f9x6Ve1GHktLvdErnhcu6aIDjS7d",
+    //     initLoadDelay: 500 // optional, default is 50 milliseconds
+    //   }
+    // },
 
     {
       module: "MMM-auto-refresh",
