@@ -99,6 +99,19 @@ var config = {
       }
     },
 
+    {
+      module: "MMM-cryptocurrency",
+      position: "top_left",
+      config: {
+        currency: ['ethereum', 'bitcoin'],
+        conversion: 'EUR',
+        showUSD: false,
+        headers: ['change24h', 'change1h', 'change7d'],
+        displayType: 'logoWithChanges',
+        showGraphs: true
+      }
+    },
+
     // {
     //   module: 'MMM-SystemStats',
     //   position: 'top_center', // This can be any of the regions.
