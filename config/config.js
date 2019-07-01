@@ -103,11 +103,11 @@ var config = {
       module: "MMM-cryptocurrency",
       position: "top_left",
       config: {
-        currency: ['ethereum', 'bitcoin'],
-        conversion: 'EUR',
+        currency: ["ethereum", "bitcoin"],
+        conversion: "AUD",
         showUSD: false,
-        headers: ['change24h', 'change1h', 'change7d'],
-        displayType: 'logoWithChanges',
+        headers: ["change24h", "change1h", "change7d"],
+        displayType: "logoWithChanges",
         showGraphs: true
       }
     },
