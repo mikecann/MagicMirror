@@ -106,7 +106,7 @@ var config = {
         currency: ["bitcoin", "ethereum", "eos"],
         conversion: "AUD",
         showUSD: false,
-        headers: ["change24h", "change1h", "change7d"],
+        headers: ["change1h", "change24h", "change7d", "change30d"],
         displayType: "logoWithChanges",
         showGraphs: true
       }
