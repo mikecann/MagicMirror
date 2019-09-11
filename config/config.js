@@ -108,8 +108,8 @@ var config = {
         showUSD: false,
         headers: ["change1h", "change24h", "change7d", "change30d"],
         displayType: "logoWithChanges",
-        showGraphs: true,
-        significantDigits: 4
+        showGraphs: true
+        //significantDigits: 4
       }
     },
 
