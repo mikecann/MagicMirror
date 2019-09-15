@@ -111,7 +111,7 @@ var config = {
         showGraphs: true
         //significantDigits: 4
       }
-    },
+    }
 
     // {
     //   module: 'MMM-SystemStats',
@@ -136,12 +136,12 @@ var config = {
     //   }
     // },
 
-    {
-      module: "MMM-auto-refresh",
-      config: {
-        refreshInterval: 60000 * 5 // every 5 mins
-      }
-    }
+    // {
+    //   module: "MMM-auto-refresh",
+    //   config: {
+    //     refreshInterval: 60000 * 5 // every 5 mins
+    //   }
+    // }
 
     // {
     //   module: "MMM-AssistantMk2",
