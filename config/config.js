@@ -82,11 +82,20 @@ var config = {
         displaySeconds: true
       }
     },
+    // {
+    //   module: "MMM-DailyDilbert",
+    //   position: "bottom_right",
+    //   config: {
+    //     updateInterval: 36000000
+    //   }
+    // },
+
     {
-      module: "MMM-DailyDilbert",
+      module: "MMM-CyanideHappiness",
       position: "bottom_right",
       config: {
-        updateInterval: 36000000
+        updateInterval: 36000000,
+        color: false
       }
     },
     {
@@ -100,16 +109,32 @@ var config = {
     },
 
     {
-      module: "MMM-cryptocurrency",
+      module: "MMM-CoinMarketCap",
       position: "top_left",
       config: {
-        currency: ["bitcoin", "ethereum", "eos"],
+        apiKey: "fc384f08-1079-441a-8d16-a784472858ce",
+        currency: ["bitcoin", "ethereum"],
         conversion: "AUD",
-        showUSD: false,
         headers: ["change1h", "change24h", "change7d", "change30d"],
-        displayType: "logoWithChanges",
-        showGraphs: true
+        view: "graphWithChanges",
+        showRowSeparator: false
         //significantDigits: 4
+      }
+    },
+
+    {
+      module: "calendar",
+      position: "top_left", // This can be any of the regions. Best results in left or right regions.
+      config: {
+        colored: false,
+        coloredSymbolOnly: false,
+        calendars: [
+          {
+            url:
+              "https://calendar.google.com/calendar/ical/mike.cann%40gmail.com/private-8ab3b24a6b71d88b9d571b6de0edccc5/basic.ics",
+            symbol: "calendar"
+          }
+        ]
       }
     },
 
