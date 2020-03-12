@@ -117,7 +117,8 @@ var config = {
         conversion: "AUD",
         headers: ["change1h", "change24h", "change7d", "change30d"],
         view: "graphWithChanges",
-        showRowSeparator: false
+        showRowSeparator: false,
+        fontColor: "white"
         //significantDigits: 4
       }
     },
