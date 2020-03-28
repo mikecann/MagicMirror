@@ -90,12 +90,33 @@ var config = {
     //   }
     // },
 
+    // {
+    //   module: "MMM-CyanideHappiness",
+    //   position: "bottom_right",
+    //   config: {
+    //     updateInterval: 36000000,
+    //     color: false
+    //   }
+    // },
     {
-      module: "MMM-CyanideHappiness",
-      position: "bottom_right",
+      module: "MMM-News",
+      position: "top_right",
       config: {
-        updateInterval: 36000000,
-        color: false
+        apiKey: "0ee7ab3c34bc485badd7e8b3371b2103",
+        type: "vertical",
+        query: [
+          {
+            sources: "abc-news-au, abc-news, cnn"
+          },
+          {
+            country: "us",
+            category: "technology",
+            className: "redTitle"
+          }
+        ],
+        drawInterval: 1000 * 15,
+        autoScroll: true,
+        touchable: false
       }
     },
     {
